@@ -89,7 +89,7 @@ nav > .menu {
 #about-content {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
 }
 
@@ -113,6 +113,7 @@ nav > .menu {
 
 #prof-detail {
   margin: auto 0 auto 0;
+  flex-wrap: wrap;
 }
 
 #works-content {
@@ -155,23 +156,37 @@ nav > .menu {
     justify-content: space-between;
   }
   #prof {
+    display: block;
+    margin: auto;
     border-radius: 50%;
     border: 3px solid #999;
     padding: 3px;
     width: 250px;
     height: 250px;
-    margin-right: 0px;
+    margin: 0 auto 0 auto;
     max-width: 100%;
     max-height: 100%;
-    align-items: center;
+
   }
   #prof-name {
-    text-align: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     margin-top: 0px;
  }
+ #prof-detail {
+  text-align: center;
+ }
+ ul {
+  display: inline-block;
+}
+li {
+  text-align: left;
+}
+
+ #about-content {
+  display: inline;
+}
  #works-content {
   display: inline;
 }
