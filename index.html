@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
   <title>MYProfile</title>
   <meta charset="UTF-8">
@@ -10,63 +9,87 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
   <header>
     <nav>
       <div class="home">
-        <a href="index.html">MyProfile</a>
+        <a class="fadeText" href="index.html">MyProfile</a>
       </div>
       <div class="menu">
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
+        <a class="fadeText" href="#about">About</a>
+        <a class="fadeText" href="#works">Works</a>
       </div>
     </nav>
   </header>
   <main>
     <article>
-      <div>
-        <img src="image/main.png" alt="CanonのCamera" id="mainpic">
+      <div class="carousel">
+        <div>
+          <img class="carouselImg" src="image/main.png" alt="CanonのCamera">
+        </div>
+        <div>
+          <img class="carouselImg" src="image/main2.png" alt="CanonのCamera">
+        </div>
+        <div>
+          <img class="carouselImg" src="image/main3.png" alt="CanonのCamera">
+        </div>
       </div>
       <section id="about">
-          <div class="title">About</div>
-          <div id="about-content">
-              <img src="image/about.png" alt="プロフィール画像" id="prof">
-            <div id="prof-detail">
-              <p id="prof-name">Kazuki Asahina</p>
-              <div id="prof-data">
+        <div class="title">About</div>
+        <div id="about-content">
+          <img src="image/about.png" alt="プロフィール画像" id="prof">
+          <div id="prof-detail">
+            <p id="prof-name">Kazuki Asahina</p>
+            <div id="prof-data">
               <ul>
                 <li>35歳 長野県佐久市出身</li>
                 <li>ソフトウェア業界でマーケティングに従事</li>
                 <li>趣味はカメラ、愛機はCanon</li>
                 <li>自然を撮影するのが好きで、海や山によく行く</li>
               </ul>
-              </div>
             </div>
           </div>
+        </div>
       </section>
       <section id="works">
         <div class="title">Works</div>
         <div id="works-content">
           <div class="works-right-left">
-            <img src="image/works1.png" alt="works1の画像画像" class="works-img">
+            <a href=""><img src="image/works1.png" alt="works1の画像画像" class="works-img"></a>
             <p>新潟に訪れた際に日本海の雄大さに魅了されて撮影した1枚</p>
           </div>
           <div id="works-center">
-            <img src="image/works2.png" alt="works2の画像画像" class="works-img">
+            <a href=""><img src="image/works2.png" alt="works2の画像画像" class="works-img"></a>
             <p>地元長野の木曽町から撮影した冠雪した御獄山</p>
           </div>
           <div class="works-right-left">
-            <img src="image/works3.png" alt="works3の画像画像" class="works-img">
+            <a href=""><img src="image/works3.png" alt="works3の画像画像" class="works-img"></a>
             <p>京都で撮影した、明け方の古き良き日本の街並み</p>
           </div>
         </div>
-    </section>
+      </section>
     </article>
   </main>
   <footer>
     <P>© MyProfile. All rights reserved.</P>
   </footer>
+  <a id="back-btn" href="#">TOP</a>
+    <!-- モーダル -->
+    <div class="modal">
+      <img src="" alt="" class="big-img">
+      <a href="" class="close-btn">✖</a>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
